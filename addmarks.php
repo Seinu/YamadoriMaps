@@ -32,6 +32,10 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="yamadorimap.php">Connect 4</a></li>
+					<li><a href="/addmarks.php">Speed Math!</a></li>
+				</ul>
 				<div class="form-group navbar-form navbar-right" type="text" id="log">
   <div type="text" id="logform">
     <form action="./logout.php" method="post">
