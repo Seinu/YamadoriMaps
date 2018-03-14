@@ -32,10 +32,22 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="yamadorimap.php">View Map</a></li>
+					<li><a href="/addmarks.php">Add to Map</a></li>
+				</ul>
 				<?php include('loginForm.php'); ?>
 			</div>
 		</div>
 	</nav>
+	<div class="container" style="text-align:center">
+		<h3>Welcome to Yamadori Maps!</h3>
+		<hr>
+		<p>Yamadori Map is currently open to use without registering<br>
+		GPL source code can be found <a href="https://github.com/Seinu/YamadoriMaps">here</a><br>
+		please use the below contact form to send suggestions or <br>
+		improvements especially concerning abuse at collecting sites</p>
+	</div>
 	<div class="container-fluid">
 		<div class="col-md-1">
 		</div>

@@ -35,11 +35,15 @@ session_start();
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="yamadorimap.php">View Map</a></li>
+					<li><a href="/addmarks.php">Add to Map</a></li>
+				</ul>
 				<?php include('logoutForm.php'); ?>
 			</div>
 		</div>
 	</nav>
-      <?php if($_SESSION['loggedin'] == TRUE) { include('includes/map.php'); }?>
+      <?php /*if($_SESSION['loggedin'] == TRUE) { */include('includes/map.php')/*; }*/?>
       
 
 	<div class="container">

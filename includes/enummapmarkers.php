@@ -32,6 +32,7 @@ while ($row = $sql->fetch(PDO::FETCH_ASSOC)){
   echo 'name="' . parseToXML($row['owner']) . '" ';
   echo 'address="' . parseToXML($row['address']) . '" ';
   echo 'phone="' . parseToXML($row['phone']) . '" ';
+  echo 'species="' . parseToXML($row['species']) . '" ';
   echo 'lat="' . $row['lat'] . '" ';
   echo 'lng="' . $row['lng'] . '" ';
   echo '/>';

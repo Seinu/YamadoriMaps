@@ -32,10 +32,12 @@ var infoWindow = new google.maps.InfoWindow;
         name = "Private";
         address = "Private";
         phone = "Private";
+        species = "Private";
       } else if(type != "private" || type == "public") {
         var name = markerElem.getAttribute('name');
         var address = markerElem.getAttribute('address');
         var phone = markerElem.getAttribute('phone');
+        var species = markerElem.getAttribute('species');
       }
       var point = new google.maps.LatLng(
           parseFloat(markerElem.getAttribute('lat')),
@@ -54,6 +56,11 @@ var infoWindow = new google.maps.InfoWindow;
 
       var text = document.createElement('text');
       text.textContent = phone
+      infowincontent.appendChild(text);
+      infowincontent.appendChild(document.createElement('br'));
+
+      var text = document.createElement('text');
+      text.textContent = species
       infowincontent.appendChild(text);
       var icon = customLabel[type] || {};
       var marker = new google.maps.Marker({
@@ -91,5 +98,5 @@ function doNothing() {}
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRMJYHo39F3atRvKunkZ5nBoNnJwLp3Nw&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>

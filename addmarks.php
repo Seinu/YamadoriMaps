@@ -33,8 +33,8 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="yamadorimap.php">Connect 4</a></li>
-					<li><a href="/addmarks.php">Speed Math!</a></li>
+					<li><a href="yamadorimap.php">View Map</a></li>
+					<li><a href="/addmarks.php">Add to Map</a></li>
 				</ul>
 				<div class="form-group navbar-form navbar-right" type="text" id="log">
   <div type="text" id="logform">
@@ -55,6 +55,7 @@
       <tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>
       <tr><td>Address:</td> <td><input type='text' id='address'/> </td> </tr>
       <tr><td>Phone:</td> <td><input type='text' id='phone'/> </td> </tr>
+      <tr><td>Species:</td> <td><input type='text' id='species'/> </td> </tr>
         <!-- todo add informaton about plant varieties found -->
 
 
@@ -142,7 +143,7 @@
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRMJYHo39F3atRvKunkZ5nBoNnJwLp3Nw&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
       
 
