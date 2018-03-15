@@ -16,6 +16,6 @@ $type = $_GET['type'];
 $sql = "INSERT INTO markers (owner, address, phone, species, lat, lng, type) VALUES (?,?,?,?,?,?,?)";
 
 $q = $_db->prepare($sql);
-$q->execute([$name, $address, $phone, species, $lat, $lng, $type]);
+$q->execute([$name, $address, $phone, $species, $lat, $lng, $type]);
 
 ?>

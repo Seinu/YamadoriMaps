@@ -2,3 +2,4 @@
 includes/connectToDB.php
 includes/.htaccess
 meta.php
+map.php

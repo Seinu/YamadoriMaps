@@ -98,5 +98,5 @@ function doNothing() {}
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRMJYHo39F3atRvKunkZ5nBoNnJwLp3Nw&callback=initMap">
     </script>

@@ -51,23 +51,20 @@
 <h3 style="text-align:center">Yamadori Map</h3>
 <div id="map"></div>
 <div id="form">
-      <table>
+      
+<table>
       <tr><td>Name:</td> <td><input type='text' id='name'/> </td> </tr>
       <tr><td>Address:</td> <td><input type='text' id='address'/> </td> </tr>
       <tr><td>Phone:</td> <td><input type='text' id='phone'/> </td> </tr>
       <tr><td>Species:</td> <td><input type='text' id='species'/> </td> </tr>
-        <!-- todo add informaton about plant varieties found -->
-
-
-      <tr><td>Public/Private:</td> <td><select id='type'> +
+      <tr><td>Private/Public:</td> <td><select id='type'> +
                  <option value='private' SELECTED>Private</option>
                  <option value='public'>Public</option>
                  </select> </td></tr>
                  <tr><td></td><td><input type='button' value='Save' onclick='saveData()'/></td></tr>
       </table>
-</div>
-<div id="message">Location saved</div>
-
+    </div>
+    <div id="message">Location saved</div>
     <script>
       var map;
       var marker;
@@ -80,6 +77,7 @@
           center: USA,
           zoom: 3
         });
+
 
         infowindow = new google.maps.InfoWindow({
           content: document.getElementById('form')
@@ -106,11 +104,12 @@
         var name = escape(document.getElementById('name').value);
         var address = escape(document.getElementById('address').value);
         var phone = escape(document.getElementById('phone').value);
-        // todo add informaton about plant varieties found
+        var species = escape(document.getElementById('species').value);
         var type = document.getElementById('type').value;
         var latlng = marker.getPosition();
-        var url = './includes/addmarker.php?name=' + name + '&address=' + address + '&phone=' + phone +
+        var url = './includes/addmarker.php?name=' + name + '&address=' + address + '&phone=' + phone  + '&species=' + species +
                   '&type=' + type + '&lat=' + latlng.lat() + '&lng=' + latlng.lng();
+
 
         downloadUrl(url, function(data, responseCode) {
 
@@ -143,7 +142,7 @@
     </script>
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRMJYHo39F3atRvKunkZ5nBoNnJwLp3Nw&callback=initMap">
     </script>
       
 
